@@ -1,0 +1,17 @@
+
+</ion-content>
+<ion-tab-bar slot="bottom">
+    <ion-tab-button {% if page.url == '/' %}tab="home"{% endif %} href="/" onclick="Tungguan()">
+      <ion-label>Dashboard</ion-label>
+      <ion-icon name="home"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button {% if page.url == '/recharge' %}tab="wifi"{% endif %} href="/recharge" onclick="Tungguan()">
+      <ion-label>Topup</ion-label>
+      <ion-icon name="wifi"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button {% if page.url == '/finance' %}tab="finance"{% endif %} href="/finance" onclick="Tungguan()">
+      <ion-label>Keuangan</ion-label>
+      <ion-icon name="cash"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

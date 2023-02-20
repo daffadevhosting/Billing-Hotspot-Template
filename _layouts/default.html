@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <script type="module" src="{{ '/assets/vendor/@ionic/core/dist/ionic/ionic.esm.js' | relative_url }}"></script>
+    <script nomodule src="{{ '/assets/vendor/@ionic/core/dist/ionic/ionic.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/vendor/@ionic/core/css/ionic.bundle.css' | relative_url }}" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ '/feed.xml' | relative_url }}" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+  </head>
+
+  <body>
+    <ion-app>
+        {% include ion-header.html %}
+          {{content}}
+        {% include ion-tab.html %}
+    {% include analytics.html %}
+  </ion-app>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+name: HotSpot Billing
+
+description: Admin Hotspot Solution
+
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github:
+  instagram:
+  linkedin:
+  pinterest:
+  rss:
+  twitter:
+  youtube:
+
+disqus:
+
+google_analytics:
+
+url:
+
+baseurl: ""
+
+version: v1.0.0
+encoding: UTF-8
+permalink: /blog/:title
+paginate: 6
+paginate_path: "/blog/page/:num"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+sass:
+  sass_dir: _styles/
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - _site
+  - _styles
+  - .DS_Store
+  - .jekyll
+  - .bundle
+  - .sass-cache
+  - gulpfile.js
+  - node_modules
+  - package.json

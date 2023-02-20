@@ -1,0 +1,22 @@
+
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        {%if page.url == '/' %} Dashboard {% endif %}
+        {%if page.url == '/recharge' %} TopUp Wi-Fi {% endif %}
+        {%if page.url == '/finance' %} Financial {% endif %}
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button>
+      <ion-icon name="settings-outline" slot="icon-only"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button>
+      <ion-icon name="log-out-outline" slot="icon-only"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+    <ion-tabs>
+      <ion-content>
