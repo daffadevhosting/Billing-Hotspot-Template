@@ -1,5 +1,9 @@
 
-<ion-header>
+<ion-tabs>
+  <ion-tab {%if page.url == '/' %}tab="home"{% endif %}
+   {%if page.url == '/recharge' %}tab="recharge"{% endif %}
+    {%if page.url == '/finance' %}tab="finance"{% endif %}>
+    <ion-header>
     <ion-toolbar>
       <ion-title>
         {%if page.url == '/' %} Dashboard {% endif %}
@@ -18,5 +22,4 @@
     </ion-buttons>
     </ion-toolbar>
   </ion-header>
-    <ion-tabs>
       <ion-content>
