@@ -4,11 +4,11 @@
   {% include head.html %}
 
   <body>
-    <ion-app>
-
-<ion-card class="login-page">
+    <ion-app class="bg-gradient">
+<div class="login-page" data-tilt data-tilt-max="35" data-tilt-speed="400" data-tilt-glare="true" data-tilt-gyroscope="true">
+<ion-card>
     <ion-card-header>
-        <h2 class="m-0 t-center">Login</h2>
+        <h2 class="m-0 t-center tri-D">Login Admin</h2>
     </ion-card-header>
     <ion-card-content>
         <ion-list>
@@ -21,10 +21,12 @@
             <ion-input placeholder="Enter text"></ion-input>
           </ion-item>
         </ion-list>
-        <ion-button class="mt-20" expand="block">Enter</ion-button>
+        <ion-button class="mt-40 tri-D" expand="block">Enter</ion-button>
     </ion-card-content>
 </ion-card>
+</div>
 
 </ion-app>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vanilla-tilt.min.js"></script>
 </body>
 </html>
