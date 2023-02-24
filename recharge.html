@@ -8,31 +8,49 @@ layout: default
                 <ion-label>TopUp Akun</ion-label>
             </ion-card-header>
             <ion-card-content>
+          <div class="check_section">
+            <label>
+            <input type="radio" name="radio"/>
+            <div class="front-end check">
+              <span class="hotspot">HotSpot</span>
+            </div>
+            </label>
+            <label>
+            <input type="radio" name="radio"/>
+            <div class="back-end check">
+              <span class="pppoe">PPPOE</span>
+            </div>
+            </label>
+          </div>
                 <ion-list>
                     <ion-item>
-                      <ion-select interface="action-sheet" placeholder="Pilih Akun">
+<ion-label>Pilih Akun</ion-label>
+                      <ion-select placeholder="Username" interface="action-sheet">
                         <ion-select-option value="apples">Apples</ion-select-option>
                         <ion-select-option value="oranges">Oranges</ion-select-option>
                         <ion-select-option value="bananas">Bananas</ion-select-option>
                       </ion-select>
                     </ion-item>
                     <ion-item>
-                      <ion-select interface="action-sheet" placeholder="Pilih Router">
+<ion-label>Pilih Server</ion-label>
+                      <ion-select placeholder="Server" interface="popover">
                         <ion-select-option value="apples">Apples</ion-select-option>
                         <ion-select-option value="oranges">Oranges</ion-select-option>
                       </ion-select>
                     </ion-item>
                     <ion-item>
-                      <ion-select interface="action-sheet" placeholder="Pilih Paket">
+<ion-label>Pilih Paket</ion-label>
+                      <ion-select placeholder="Paket Wifi" interface="popover">
                         <ion-select-option value="apples">Apples</ion-select-option>
                         <ion-select-option value="oranges">Oranges</ion-select-option>
-                        <ion-select-option value="bananas">Bananas</ion-select-option>
                       </ion-select>
                     </ion-item>
                   </ion-list>
-                <ion-buttons>
+            <ion-toolbar>
+                <ion-buttons slot="end">
                     <ion-button color="primary">Send</ion-button>
                 </ion-buttons>
+            </ion-toolbar>
             </ion-card-content>
         </ion-card>
     </div>

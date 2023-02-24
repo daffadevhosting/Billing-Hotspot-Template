@@ -9,9 +9,10 @@
         {%if page.url == '/' %} Dashboard {% endif %}
         {%if page.url == '/recharge' %} TopUp Wi-Fi {% endif %}
         {%if page.url == '/finance' %} Financial {% endif %}
+        {%if page.url == '/settings' %} Setting {% endif %}
       </ion-title>
       <ion-buttons slot="end">
-        <ion-button>
+        <ion-button href="{{site.baseurl}}/settings">
       <ion-icon name="settings-outline" slot="icon-only"></ion-icon>
     </ion-button>
     </ion-buttons>
@@ -23,3 +24,5 @@
     </ion-toolbar>
   </ion-header>
       <ion-content>
+  <div class="square_box box_three" data-tilt data-tilt-max="35" data-tilt-speed="400" data-tilt-glare="true" data-tilt-gyroscope="true"></div>
+  <div class="square_box box_four" data-tilt data-tilt-max="35" data-tilt-speed="400" data-tilt-glare="true" data-tilt-gyroscope="true"></div>

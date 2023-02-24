@@ -3,31 +3,33 @@
         <ion-card-header>
 <ion-label>Expired Hari ini</ion-label>
         </ion-card-header>
-        <ion-list class="table-panel-body table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Username</th>
-                        <th>Created_On</th>
-                        <th>Expires_On</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#1</td>
-                        <td>jojon</td>
-                        <td>20-02-2023</td>
-                        <td>21-02-2023</td>
-                    </tr>
-                    <tr>
-                        <td>#2</td>
-                        <td>tono</td>
-                        <td>20-02-2023</td>
-                        <td>21-02-2023</td>
-                    </tr>
-                </tbody>
-            </table>
+        <ion-list class="table-panel-body pt-0 maxH-320 table-responsive">
+<ion-grid>
+  <ion-row>
+    <ion-col class="numbr head">no</ion-col>
+    <ion-col class="head">Username</ion-col>
+    <ion-col class="head">tgl. Aktif</ion-col>
+    <ion-col class="head">tgl. Expired</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="numbr">1</ion-col>
+    <ion-col>Jojon</ion-col>
+    <ion-col>12-02-2023</ion-col>
+    <ion-col>13-02-2023</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="numbr">2</ion-col>
+    <ion-col>Ikbal</ion-col>
+    <ion-col>12-02-2023</ion-col>
+    <ion-col>13-02-2023</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="numbr">3</ion-col>
+    <ion-col>Oman</ion-col>
+    <ion-col>12-02-2023</ion-col>
+    <ion-col>13-02-2023</ion-col>
+  </ion-row>
+</ion-grid>
         </ion-list>
     </ion-card>
 
@@ -35,7 +37,7 @@
         <ion-card-header>
 <ion-label>Aktifitas Login</ion-label>
         </ion-card-header>
-        <ion-list class="table-panel-body table-responsive">
+        <ion-list class="table-panel-body pt-0 table-responsive">
             <ion-item>
               <ion-avatar slot="start">
                 <img src="{{site.avatar}}" />
@@ -45,6 +47,42 @@
                 <p>08.00 - 20.022.2023</p>
               </ion-label>
             </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="{{site.avatar}}" />
+              </ion-avatar>
+              <ion-label>
+                <h3>Sales berhasil login</h3>
+                <p>06.00 - 20.022.2023</p>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="{{site.avatar}}" />
+              </ion-avatar>
+              <ion-label>
+                <h3>Sales berhasil login</h3>
+                <p>07.00 - 19.022.2023</p>
+              </ion-label>
+            </ion-item>
         </ion-list>
     </ion-card>
 </div>
+<style>
+  ion-col.numbr {
+    max-width: 38px;
+  }
+
+  ion-col {
+    background-color: #93a1a1;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+  }
+  ion-col.head {
+    background-color: #135d54;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+  }
+</style>
